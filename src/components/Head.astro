@@ -1,0 +1,17 @@
+---
+const { title, description, image } = Astro.props;
+---
+
+<!-- CSS -->
+<link rel="stylesheet" href="/style/global.css">
+<link rel="stylesheet" href="/style/home.css">
+
+<!-- Fonts -->
+
+<!-- Icons -->
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+<!-- OpenGraph -->
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={image} />

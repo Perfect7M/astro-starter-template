@@ -1,0 +1,56 @@
+---
+import PrimaryButton from './PrimaryButton.astro';
+---
+<div class="navbar">
+  <div class="logo">
+    <!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+    <img src="/assets/logo.svg" height="60" />
+  </div>
+  <ul class="list">
+    <li class="element">
+      <a class="link" href="#">Product</a>
+    </li>
+    <li class="element">
+      <a class="link" href="#">Features</a>
+    </li>
+    <li class="element">
+      <a class="link" href="#">Pricing</a>
+    </li>
+    <li class="element">
+      <a class="link" href="#">Contact us</a>
+    </li>
+    <li class="element">
+      <a class="link" href="#">Our company</a>
+    </li>
+    <li class="element">
+      <PrimaryButton>Get started</PrimaryButton>
+    </li>
+  </ul>
+</div>
+
+<style>
+  .navbar {
+    display: flex;
+    height: 60px;
+    padding: 0 20px;
+    align-items: center;
+  }
+  .list {
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+  }
+  .element {
+    margin: 0 15px;
+  }
+  .element:last-of-type {
+    margin: 0;
+  }
+  .link {
+    text-decoration: none;
+  }
+  .link:hover {
+    color: #000;
+    text-decoration: underline;
+  }
+</style>

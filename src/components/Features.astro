@@ -1,0 +1,50 @@
+---
+import PrimaryButton from './PrimaryButton.astro';
+import SecondaryButton from './SecondaryButton.astro';
+---
+<div class="features">
+  <h2>Our product are amazing</h2>
+  <p>
+    List of incredible features of our application. None of any other application has them!
+  </p>
+  <div class="grid">
+    <div class="column">Lorem</div>
+    <div class="column">Lorem</div>
+    <div class="column">Lorem</div>
+  </div>
+</div>
+
+<style>
+  .features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 75vh;
+    padding: 0 15px;
+  }
+  .grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    margin-top: 80px;
+    padding: 0 15px;
+  }
+  h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+  p {
+    max-width: 750px;
+    margin-top: 40px;
+    font-size: 18px;
+  }
+  .buttons {
+    width: 250px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .marked {
+    color: var(--primary);
+  }
+</style>
